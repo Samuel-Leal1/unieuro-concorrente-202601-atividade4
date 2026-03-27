@@ -1,0 +1,147 @@
+
+pocessar_paralelo.py
+
+=======================================================
+  PROCESSAMENTO PARALELO
+  Threads : 2
+  Entrada : partes/  (12 arquivos)
+  Saída   : partes_cinza/
+
+=======================================================
+  RESULTADO FINAL
+=======================================================
+  Threads utilizadas : 2
+  Partes processadas : 12
+
+  Thread 00: 26.09s
+  Thread 01: 26.09s
+  Thread 02: 29.02s
+  Thread 03: 29.04s
+  Thread 04: 25.83s
+  Thread 05: 26.80s
+  Thread 06: 26.00s
+  Thread 07: 26.00s
+  Thread 08: 26.27s
+  Thread 09: 26.19s
+  Thread 10: 26.14s
+  Thread 11: 26.27s
+
+  
+
+  ⏱️  Tempo total de processamento: 160.47 segundos
+  ⏱️  Tempo total de processamento: 2.67 minutos
+  🧵  Threads utilizadas           : 2
+=======================================================
+
+✅ Processamento paralelo concluído!
+   Partes salvas em 'partes_cinza/'
+   Execute juntar.py para gerar a imagem final.
+
+PS C:\Users\aluno\Downloads\unieuro-concorrente-202601-atividade4-main> python processar_paralelo.py
+
+=======================================================
+  PROCESSAMENTO PARALELO
+  Threads : 4
+  Entrada : partes/  (12 arquivos)
+  Saída   : partes_cinza/
+=======================================================
+  RESULTADO FINAL
+=======================================================
+  Threads utilizadas : 4
+  Partes processadas : 12
+
+  
+  ⏱️  Tempo total de processamento: 116.07 segundos
+  ⏱️  Tempo total de processamento: 1.93 minutos
+  🧵  Threads utilizadas           : 4
+=======================================================
+
+✅ Processamento paralelo concluído!
+   Partes salvas em 'partes_cinza/'
+   Execute juntar.py para gerar a imagem final.
+
+
+PS C:\Users\aluno\Downloads\unieuro-concorrente-202601-atividade4-main> python processar_paralelo.py
+
+=======================================================
+  PROCESSAMENTO PARALELO
+  Threads : 8
+  Entrada : partes/  (12 arquivos)
+  Saída   : partes_cinza/
+=======================================================
+
+  RESULTADO FINAL
+=======================================================
+  Threads utilizadas : 8
+  Partes processadas : 12
+
+  Thread 00: 71.18s
+  Thread 01: 71.27s
+  Thread 02: 71.15s
+  Thread 03: 71.67s
+  Thread 04: 71.45s
+  Thread 05: 71.63s
+  Thread 06: 71.27s
+  Thread 07: 71.17s
+  Thread 08: 42.91s
+  Thread 09: 42.61s
+  Thread 10: 42.31s
+  Thread 11: 42.91s
+
+  ⏱️  Tempo total de processamento: 114.59 segundos
+  ⏱️  Tempo total de processamento: 1.91 minutos
+  🧵  Threads utilizadas           : 8
+=======================================================
+
+✅ Processamento paralelo concluído!
+   Partes salvas em 'partes_cinza/'
+   Execute juntar.py para gerar a imagem final.
+
+   PS C:\Users\aluno\Downloads\unieuro-concorrente-202601-atividade4-main> python processar_paralelo.py
+
+=======================================================
+  PROCESSAMENTO PARALELO
+  Threads : 12
+  Entrada : partes/  (12 arquivos)
+  Saída   : partes_cinza/
+=======================================================
+
+Disparando threads...
+
+  [Thread 00] Iniciando → parte_00.ppm
+  [Thread 01] Iniciando → parte_01.ppm
+  [Thread 02] Iniciando → parte_02.ppm
+  [Thread 03] Iniciando → parte_03.ppm
+  [Thread 04] Iniciando → parte_04.ppm
+  [Thread 05] Iniciando → parte_05.ppm
+  [Thread 06] Iniciando → parte_06.ppm
+  [Thread 07] Iniciando → parte_07.ppm
+  [Thread 08] Iniciando → parte_08.ppm
+  [Thread 09] Iniciando → parte_09.ppm
+  [Thread 10] Iniciando → parte_10.ppm
+  [Thread 11] Iniciando → parte_11.ppm
+  
+=======================================================
+  RESULTADO FINAL
+=======================================================
+  Threads utilizadas : 12
+  Partes processadas : 12
+
+  Thread 00: 55.30s
+  Thread 01: 58.94s
+  Thread 02: 54.99s
+  Thread 03: 58.00s
+  Thread 04: 56.57s
+  Thread 05: 57.92s
+  Thread 06: 55.02s
+  Thread 07: 57.43s
+  Thread 08: 55.26s
+  Thread 09: 58.05s
+  Thread 10: 54.59s
+  Thread 11: 57.91s
+
+
+  ⏱️  Tempo total de processamento: 58.94 segundos
+  ⏱️  Tempo total de processamento: 0.98 minutos
+  🧵  Threads utilizadas           : 12
+=======================================================
