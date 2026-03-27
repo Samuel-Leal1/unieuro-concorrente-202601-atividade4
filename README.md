@@ -1,16 +1,19 @@
-Relatório da Aplicação de Filtro em Imagem de Forma Paralela
+# Relatório da Aplicação de Filtro em Imagem de Forma Paralela
+  
+---
 
-Disciplina: Computação Paralela e Distribuída
-Aluno(s): 
-Samuel Leal
-Marcelo Oliveira
-Kaio Kevin
-Willian Alencar
-      
-Professor: Rafael Marconi Ramos
-Data: 27/03/2026
+| Campo      | Informação                        |
+|------------|-----------------------------------|
+| Disciplina | Computação Paralela e Distribuída |
+| Aluno      | Samuel Leal de Araujo             |
+| Aluno      | Marcelo Oliveira                  |
+| Aluno      | Kaio Kevin                        |
+| Aluno      | Willian Alencar                   |
+| Professor  | Rafael Marconi Ramos              |
+| Data       | 27/03/2026                        |
 
----- 1. Descrição do Problema ----
+---
+##1. Descrição do Problema 
 
 O problema consiste na conversão de uma imagem grande no formato PPM para escala de cinza.
 
@@ -22,7 +25,9 @@ Objetivo: reduzir o tempo de processamento da imagem
 Volume de dados: imagem de ~16 GB
 Algoritmo: divisão de dados + execução paralela via threads/subprocessos
 Complexidade: O(N) (número de pixels)
----- 2. Ambiente Experimental ----
+---
+##2. Ambiente Experimental 
+
 | Item                        | Descrição              |
 | --------------------------- | ---------------------- |
 | Processador                 | Ryzen 5 3600X          |
@@ -33,7 +38,8 @@ Complexidade: O(N) (número de pixels)
 | Biblioteca de paralelização | threading + subprocess |
 | Compilador / Versão         | CPython 3.14           |
 
----- 3. Metodologia de Testes ----
+---- 
+##3. Metodologia de Testes 
 
 O tempo foi medido com time.time(), considerando o tempo total do processamento.
 
@@ -50,7 +56,9 @@ Execução única por configuração
 Sem cálculo de média
 Execução em máquina local
 Processamento com leitura e escrita intensiva em disco
----- 4. Resultados Experimentais ----
+---
+##4. Resultados Experimentais 
+
 | Nº Threads | Tempo (s) |
 | ---------- | --------- |
 | 2          | 160.47    |
@@ -58,12 +66,16 @@ Processamento com leitura e escrita intensiva em disco
 | 8          | 114.59    |
 | 12         | 58.94     |
 
----- 5. Cálculo de Speedup e Eficiência ----
+---
+##5. Cálculo de Speedup e Eficiência 
+
 Speedup
 Speedup(p) = T(1) / T(p)
 Eficiência
 Eficiência(p) = Speedup(p) / p
----- 6. Tabela de Resultados ----
+--- 
+##6. Tabela de Resultados 
+
 | Threads | Tempo (s) | Speedup | Eficiência |
 | ------- | --------- | ------- | ---------- |
 | 2       | 160.47    | 0.774   | 0.387      |
@@ -71,20 +83,26 @@ Eficiência(p) = Speedup(p) / p
 | 8       | 114.59    | 1.084   | 0.136      |
 | 12      | 58.94     | 2.107   | 0.176      |
 
----- 7. Gráfico de Tempo de Execução ----
+--- 
+##7. Gráfico de Tempo de Execução 
+
 Eixo X: número de threads
 Eixo Y: tempo de execução (segundos)
 
----- 8. Gráfico de Speedup ----
+--- 
+##8. Gráfico de Speedup 
 Eixo X: número de threads
 Eixo Y: speedup
 Comparação com linha ideal (linear)
 
----- 9. Gráfico de Eficiência ----
+--- 
+##9. Gráfico de Eficiência
+
 Eixo X: número de threads
 Eixo Y: eficiência (0 a 1)
 
----- 10. Análise dos Resultados ----
+--- 
+##10. Análise dos Resultados 
 
 Os resultados mostram que o paralelismo trouxe ganho de desempenho apenas em configurações com maior número de threads, especialmente com 12 threads.
 
