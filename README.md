@@ -13,7 +13,7 @@
 | Data       | 27/03/2026                        |
 
 ---
-##1. Descrição do Problema 
+## 1. Descrição do Problema 
 
 O problema consiste na conversão de uma imagem grande no formato PPM para escala de cinza.
 
@@ -26,7 +26,7 @@ Volume de dados: imagem de ~16 GB
 Algoritmo: divisão de dados + execução paralela via threads/subprocessos
 Complexidade: O(N) (número de pixels)
 ---
-##2. Ambiente Experimental 
+## 2. Ambiente Experimental 
 
 | Item                        | Descrição              |
 | --------------------------- | ---------------------- |
@@ -39,7 +39,7 @@ Complexidade: O(N) (número de pixels)
 | Compilador / Versão         | CPython 3.14           |
 
 ---- 
-##3. Metodologia de Testes 
+## 3. Metodologia de Testes 
 
 O tempo foi medido com time.time(), considerando o tempo total do processamento.
 
@@ -57,7 +57,7 @@ Sem cálculo de média
 Execução em máquina local
 Processamento com leitura e escrita intensiva em disco
 ---
-##4. Resultados Experimentais 
+## 4. Resultados Experimentais 
 
 | Nº Threads | Tempo (s) |
 | ---------- | --------- |
@@ -67,14 +67,27 @@ Processamento com leitura e escrita intensiva em disco
 | 12         | 58.94     |
 
 ---
-##5. Cálculo de Speedup e Eficiência 
+## 5. Cálculo de Speedup e Eficiência
 
-Speedup
+**Speedup:**
+```
 Speedup(p) = T(1) / T(p)
-Eficiência
+```
+
+Onde:
+- `T(1)` = tempo da execução com 1 processo (baseline)
+- `T(p)` = tempo com `p` processos
+
+**Eficiência:**
+```
 Eficiência(p) = Speedup(p) / p
---- 
-##6. Tabela de Resultados 
+```
+
+Onde:
+- `p` = número de processos
+
+---
+## 6. Tabela de Resultados 
 
 | Threads | Tempo (s) | Speedup | Eficiência |
 | ------- | --------- | ------- | ---------- |
@@ -84,25 +97,25 @@ Eficiência(p) = Speedup(p) / p
 | 12      | 58.94     | 2.107   | 0.176      |
 
 --- 
-##7. Gráfico de Tempo de Execução 
+## 7. Gráfico de Tempo de Execução 
 
 Eixo X: número de threads
 Eixo Y: tempo de execução (segundos)
 
 --- 
-##8. Gráfico de Speedup 
+## 8. Gráfico de Speedup 
 Eixo X: número de threads
 Eixo Y: speedup
 Comparação com linha ideal (linear)
 
 --- 
-##9. Gráfico de Eficiência
+## 9. Gráfico de Eficiência
 
 Eixo X: número de threads
 Eixo Y: eficiência (0 a 1)
 
 --- 
-##10. Análise dos Resultados 
+## 10. Análise dos Resultados 
 
 Os resultados mostram que o paralelismo trouxe ganho de desempenho apenas em configurações com maior número de threads, especialmente com 12 threads.
 
@@ -122,7 +135,9 @@ Principais fatores
 Gargalo de I/O (acesso ao disco)
 Overhead de criação de subprocessos
 Concorrência por CPU e disco
----- 11. Conclusão ----
+
+--- 
+## 11. Conclusão 
 
 O paralelismo trouxe ganho moderado de desempenho, reduzindo o tempo de execução de 180.34 s para 58.94 s com 12 threads.
 
