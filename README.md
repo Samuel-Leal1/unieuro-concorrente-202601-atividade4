@@ -97,24 +97,34 @@ Onde:
 | 12      | 58.94     | 2.107   | 0.176      |
 
 --- 
-## 7. Gráfico de Tempo de Execução 
+## 7. Gráfico de Tempo de Execução
 
-Eixo X: número de threads
-Eixo Y: tempo de execução (segundos)
+<img width="485" height="295" alt="processosTempo" src="https://github.com/user-attachments/assets/659499bf-02ff-401d-82f7-9503a05445ba" />
 
---- 
-## 8. Gráfico de Speedup 
-Eixo X: número de threads
-Eixo Y: speedup
-Comparação com linha ideal (linear)
+- **Eixo X:** número de processos
+- **Eixo Y:** tempo de execução (segundos)
 
---- 
+---
+
+## 8. Gráfico de Speedup
+
+<img width="488" height="299" alt="threadsSpeedup" src="https://github.com/user-attachments/assets/5f1b320d-dbcf-4511-8b55-2252734dcee1" />
+
+- **Eixo X:** número de processos
+- **Eixo Y:** speedup
+- Incluir linha de speedup ideal (linear) para comparação
+
+---
+
 ## 9. Gráfico de Eficiência
 
-Eixo X: número de threads
-Eixo Y: eficiência (0 a 1)
+<img width="487" height="296" alt="threadsEficiencia" src="https://github.com/user-attachments/assets/8c6f026b-ee0a-46cd-b3ab-9c5502886bab" />
 
---- 
+- **Eixo X:** número de processos
+- **Eixo Y:** eficiência (valores entre 0 e 1)
+
+---
+
 ## 10. Análise dos Resultados 
 
 Os resultados mostram que o paralelismo trouxe ganho de desempenho apenas em configurações com maior número de threads, especialmente com 12 threads.
