@@ -8,7 +8,7 @@
 | Aluno      | Samuel Leal de Araujo             |
 | Aluno      | Marcelo Oliveira                  |
 | Aluno      | Kaio Kevin                        |
-| Aluno      | Willian Alencar                   |
+| Aluno      | William Alencar                   |
 | Professor  | Rafael Marconi Ramos              |
 | Data       | 27/03/2026                        |
 
