@@ -12,7 +12,7 @@ Para alterar o número de threads, mude a variável abaixo:
 #   ALTERE AQUI O NÚMERO DE THREADS
 #   Valores sugeridos: 2, 4, 8, 12
 # =============================================
-NUM_THREADS = 8
+NUM_THREADS = 12
 # =============================================
 
 import os
